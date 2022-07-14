@@ -1,11 +1,20 @@
 import React from "react";
+import Accordion from "react-bootstrap/Accordion";
+import Navigation from "../Nav";
 
 function Header() {
 
     return(
-        <header>
-            This is My Header
-        </header>
+        <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                    <h1>Anthony Rankin</h1>
+                </Accordion.Header>
+                <Accordion.Body>
+                    <Navigation />
+                </Accordion.Body>
+            </Accordion.Item>
+        </Accordion>
     );
 }
 

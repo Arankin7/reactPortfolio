@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from 'react-bootstrap/Popover';
-import PhotoCarousel from "../PhotoCaro";
+import Carousel from 'react-bootstrap/Carousel';
 
 function Project () {
 
@@ -28,14 +28,37 @@ function Project () {
         }
     ])
 
-   
+    // Used to cycle through each project Screenshot
+    const photos = [
+        {
+            index: 0
+        },
+        {
+            index: 1
+        },
+        {
+            index: 2
+        }
+    ]
 
     return (
 
         <div>
         {projects.map((project) => (
             <Card style={{width: '18rem'}} key={project.name}>
-            <PhotoCarousel />
+                {/* Carousel for photos */}
+            <Carousel>
+                {photos.map((photo) =>(
+                    <Carousel.Item>
+                    <img 
+                    className="d-block w-100"
+                    src={require(`../../assets/images/${project.name}/${photo.index}.png`)}
+                    alt={project.description}
+                    />
+                </Carousel.Item>
+                ))}                
+            </Carousel>
+
             <Card.Body>
                 <Card.Title>{project.name}</Card.Title>
                 {/* <Card.Text>{project.description}</Card.Text> */}
@@ -60,8 +83,7 @@ function Project () {
             </Card.Body>
         </Card>            
         ))}
-        </div>
-        
+        </div>        
     )
 }
 

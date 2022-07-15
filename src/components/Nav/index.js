@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav"
-import Contact from "../Contact";
+// import Contact from "../Contact";
 
 function Navigation(){
 

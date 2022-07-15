@@ -70,7 +70,7 @@ function Project () {
             <Col md="auto">
             <Card style={{width: '18rem'}} key={project.name}>
                 {/* Carousel for photos */}
-            <Carousel>
+            <Carousel fade>
                 {photos.map((photo) =>(
                     <Carousel.Item>
                     <img 

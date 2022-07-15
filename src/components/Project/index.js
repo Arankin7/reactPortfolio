@@ -4,6 +4,9 @@ import Card from "react-bootstrap/Card";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 function Project () {
 
@@ -61,8 +64,10 @@ function Project () {
 
     return (
 
-        <div>
+        <Container>
+        <Row className="justify-content-md-center">
         {projects.map((project) => (
+            <Col md="auto">
             <Card style={{width: '18rem'}} key={project.name}>
                 {/* Carousel for photos */}
             <Carousel>
@@ -99,9 +104,11 @@ function Project () {
                 <Button variant="info">Info</Button>
                 </OverlayTrigger>
             </Card.Body>
-        </Card>            
+        </Card>
+        </Col>            
         ))}
-        </div>        
+        </Row>
+        </Container>        
     )
 }
 

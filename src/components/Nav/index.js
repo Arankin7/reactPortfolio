@@ -16,6 +16,10 @@ function Navigation(){
         {
             name: "My Projects",
             description: "A few of the projects I've worked on"
+        },
+        {
+            name: "Resume",
+            description: "Download or view my resume"
         }
     ];
 

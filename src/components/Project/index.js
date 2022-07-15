@@ -25,6 +25,24 @@ function Project () {
             description: "A fullstack app that uses MySql as a database",
             github: "https://github.com/Arankin7/JustMusicReviews",
             deployed: "https://blooming-headland-30084.herokuapp.com/"
+        },
+        {
+            name: "Music Dashboard",
+            description: "A front end application utilizing web apis where users can search for musical artists, venues, and lyrics.",
+            github: "https://github.com/Arankin7/project1_MusicDashboard",
+            deployed: "https://arankin7.github.io/project1_MusicDashboard/"
+        },
+        {
+            name: "Work Day Scheduler",
+            description: "Simple calendar app for scheduling your work day.",
+            github: "https://github.com/Arankin7/daily-scheduler",
+            deployed: "https://arankin7.github.io/daily-scheduler/"
+        },
+        {
+            name: "Weather Dashboard",
+            description: "Weather dashboard where you can search for weather by city",
+            github: "https://github.com/Arankin7/weatherDashboard_AR",
+            deployed: "https://arankin7.github.io/weatherDashboard_AR/"
         }
     ])
 

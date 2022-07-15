@@ -8,7 +8,6 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Project from './components/Project';
-// import ProjectGallery from './components/ProjectGallery';
 // import Navigation from './components/Nav';
 // import Contact from './components/Contact';
 
@@ -20,7 +19,6 @@ function App() {
         <Header />
           {/* <Navigation /> */}
           <About />
-          {/* <ProjectGallery /> */}
           <Project />
         <Footer />
       </main>

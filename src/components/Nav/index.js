@@ -4,30 +4,34 @@ import Contact from "../Contact";
 
 function Navigation(){
 
+    const categories = [
+        {
+            name: "Home",
+            description: "Home page"
+        },
+        {
+            name: "About Me",
+            description: "Info about me"
+        },
+        {
+            name: "My Projects",
+            description: "A few of the projects I've worked on"
+        }
+    ];
+
+    function categorySelected(name) {
+        console.log(`${name} clicked`)
+    }
+
     return (
 
-        // Still need to fix links from navbar
-
         <Nav justify variant="tabs" defaultActiveKey="/home">
-            {/* Link to Homepage */}
-            <Nav.Item>
-                <Nav.Link href="/home">Home</Nav.Link>
-            </Nav.Item>
 
-            {/* Link to About me */}
-            <Nav.Item>
-                <Nav.Link href="/about">About Me</Nav.Link>
-            </Nav.Item>
-
-            {/* Projects Link */}
-            <Nav.Item>
-                <Nav.Link href="/projects">Projects</Nav.Link>
-            </Nav.Item>
-
-            {/* Contact Link */}
-            <Nav.Item>
-                <Nav.Link><Contact /></Nav.Link>
-            </Nav.Item>
+            {categories.map((category) => (
+                <Nav.Item key={category.name}>
+                    <Nav.Link onClick={() =>categorySelected(category.name)}>{category.name}</Nav.Link>
+                </Nav.Item>
+            ))}
         </Nav>
     );
 }

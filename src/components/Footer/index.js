@@ -9,7 +9,7 @@ function Footer() {
             {/* Add in links to Github, LinkedIn, and something else */}
             This is my footer
 
-            <Contact></Contact>
+            <Contact />
         </footer>
     );
 }

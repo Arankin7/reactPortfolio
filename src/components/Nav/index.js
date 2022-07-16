@@ -1,39 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "react-bootstrap/Nav"
 // import Contact from "../Contact";
 
-function Navigation(){
+function Navigation(props){
 
-    const categories = [
-        {
-            name: "Home",
-            description: "Home page"
-        },
-        {
-            name: "About Me",
-            description: "Info about me"
-        },
-        {
-            name: "My Projects",
-            description: "A few of the projects I've worked on"
-        },
-        {
-            name: "Resume",
-            description: "Download or view my resume"
-        }
-    ];
+    // taking from Parent Component Header
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+        projectSelected,
+        setProjectSelected
+    } = props;
 
-    function categorySelected(name) {
-        console.log(`${name} clicked`)
-    }
+    useEffect(() =>{
+        document.title = (currentCategory.name);
+    }, [currentCategory]);
+
+    // function categorySelected(name) {
+    //     console.log(`${currentCategory.name} clicked`)
+    // }
 
     return (
 
         <Nav justify variant="tabs" defaultActiveKey="/home">
 
             {categories.map((category) => (
-                <Nav.Item key={category.name}>
-                    <Nav.Link onClick={() =>categorySelected(category.name)}>{category.name}</Nav.Link>
+                <Nav.Item className={` ${currentCategory.name === category.name && 'navActive'}`} key={category.name}>
+                    <Nav.Link onClick={() => {
+                        setCurrentCategory(category);
+                        }}>{category.name}</Nav.Link>
                 </Nav.Item>
             ))}
         </Nav>

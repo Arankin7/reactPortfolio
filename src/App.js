@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
+import React, { useState } from 'react';
 
 // import Components 
 import About from './components/About';
@@ -13,13 +13,22 @@ import Project from './components/Project';
 
 function App() {
 
+  const [currentCategory, setCurrentCategory] = useState(0);
+
+  const [projectSelected, setProjectSelected] =useState(false);
+
   return (
     <div>
       <main>
         <Header />
           {/* <Navigation /> */}
-          <About />
-          <Project />
+          {!projectSelected ? (
+            <>
+            <About currentCategory={currentCategory} />
+            </>
+          ) : (
+            <Project />
+          )}
         <Footer />
       </main>
     </div>

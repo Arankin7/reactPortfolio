@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Contact from "../Contact";
 import Navigation from "../Nav";
@@ -9,6 +9,29 @@ import Col from 'react-bootstrap/Col';
 
 
 function Header() {
+
+    const categories = [
+        {
+            name: "Home",
+            description: "Home page"
+        },
+        {
+            name: "About Me",
+            description: "Info about me"
+        },
+        {
+            name: "My Projects",
+            description: "A few of the projects I've worked on"
+        },
+        {
+            name: "Resume",
+            description: "Download or view my resume"
+        }
+    ];
+
+    const [currentCategory, setCurrentCategory] = useState(0);
+
+    const [projectSelected, setProjectSelected] = useState(false);
 
     return(
         <Container>
@@ -24,7 +47,13 @@ function Header() {
                             </Col>
                         </Accordion.Header>
                         <Accordion.Body>
-                            <Navigation />
+                            <Navigation 
+                                categories={categories}
+                                setCurrentCategory={setCurrentCategory}
+                                currentCategory={currentCategory}
+                                projectSelected={projectSelected}
+                                setProjectSelected={setProjectSelected}
+                             />
                         </Accordion.Body>
                     </Row>
                 </Accordion.Item>

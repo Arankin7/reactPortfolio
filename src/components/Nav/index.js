@@ -27,8 +27,15 @@ function Navigation(props){
 
             {categories.map((category) => (
                 <Nav.Item className={` ${currentCategory.name === category.name && 'navActive'}`} key={category.name}>
-                    <Nav.Link onClick={() => {
-                        setCurrentCategory(category);
+                    <Nav.Link onClick={() => { 
+                        // setProjectSelected(true)
+                        setCurrentCategory(category)
+                        if(category.name === 'My Projects'){
+                            setProjectSelected(true);
+                        }
+                        else{
+                            setProjectSelected(false)
+                        }
                         }}>{category.name}</Nav.Link>
                 </Nav.Item>
             ))}

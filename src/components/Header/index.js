@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-function Header() {
+function Header(props) {
 
     const categories = [
         {
@@ -31,7 +31,9 @@ function Header() {
 
     const [currentCategory, setCurrentCategory] = useState(0);
 
-    const [projectSelected, setProjectSelected] = useState(false);
+    // const [projectSelected, setProjectSelected] = useState();
+
+    const { projectSelected, setProjectSelected } = props;
 
     return(
         <Container>

@@ -20,7 +20,10 @@ function App() {
   return (
     <div>
       <main>
-        <Header />
+        <Header
+        projectSelected={projectSelected}
+        setProjectSelected={setProjectSelected}
+         />
           {/* <Navigation /> */}
           {!projectSelected ? (
             <>

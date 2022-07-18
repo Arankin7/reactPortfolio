@@ -8,6 +8,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Project from './components/Project';
+import Home from './components/Home';
 // import Navigation from './components/Nav';
 // import Contact from './components/Contact';
 
@@ -24,6 +25,8 @@ function App() {
         projectSelected={projectSelected}
         setProjectSelected={setProjectSelected}
          />
+
+          <Home />
           {/* <Navigation /> */}
           {!projectSelected ? (
             <>

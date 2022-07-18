@@ -14,7 +14,13 @@ function Navigation(props){
     } = props;
 
     useEffect(() =>{
-        document.title = (currentCategory.name);
+        if(currentCategory.name){
+            document.title = (currentCategory.name); 
+        }
+        else {
+            document.title = "Anthony Rankin"
+        }
+        
     }, [currentCategory]);
 
     // function categorySelected(name) {

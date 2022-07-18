@@ -87,7 +87,7 @@ function Project () {
                 {/* <Card.Text>{project.description}</Card.Text> */}
 
                 {/* Had to define the popover in the overlay Property */}
-                <OverlayTrigger trigger="focus" placement="bottom" 
+                <OverlayTrigger trigger="focus" placement="right" 
                 overlay={
                     <Popover id="popover-basic" key={project.name}>
                         <Popover.Header as="h3">{project.name}</Popover.Header>

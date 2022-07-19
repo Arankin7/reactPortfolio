@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Project from './components/Project';
 import Home from './components/Home';
+import Resume from './components/Resume';
 // import Navigation from './components/Nav';
 // import Contact from './components/Contact';
 
@@ -17,8 +18,8 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(0);
 
   const [projectSelected, setProjectSelected] = useState(false);
-
   const [aboutSelected, setAboutSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <div>
@@ -28,11 +29,13 @@ function App() {
         setProjectSelected={setProjectSelected}
         aboutSelected={aboutSelected}
         setAboutSelected={setAboutSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
          />
          {/* Messy, but I got it to work */}
 
          {/* Will display home if nothing else is selected */}
-         {!projectSelected && !aboutSelected ? (
+         {!projectSelected && !aboutSelected && !resumeSelected ? (
           <>
           <Home />
           </>
@@ -43,8 +46,7 @@ function App() {
          {/* Displays project if projectSelected is true */}
         {projectSelected ? (
             <>
-            <Project />
-            
+            <Project />            
             </>
           )   :  (
             <div />
@@ -54,6 +56,14 @@ function App() {
         {aboutSelected ? (
             <>
             <About currentCategory={currentCategory} />
+            </>
+          ) : (
+            <div />
+          )}
+
+          {resumeSelected ? (
+            <>
+            <Resume />
             </>
           ) : (
             <div />

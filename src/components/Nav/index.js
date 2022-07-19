@@ -12,7 +12,9 @@ function Navigation(props){
         projectSelected,
         setProjectSelected,
         aboutSelected,
-        setAboutSelected
+        setAboutSelected,
+        resumeSelected,
+        setResumeSelected
     } = props;
 
     useEffect(() =>{
@@ -49,14 +51,22 @@ function Navigation(props){
                         if(category.name === 'My Projects'){
                             setProjectSelected(true);
                             setAboutSelected(false)
+                            setResumeSelected(false)
                         }
                         else if(category.name === 'About Me'){
                             setAboutSelected(true)
-                            setProjectSelected(false)    
+                            setProjectSelected(false)
+                            setResumeSelected(false)    
                         }
+                        else if(category.name === 'Resume'){
+                            setResumeSelected(true)
+                            setProjectSelected(false)
+                            setAboutSelected(false)
+                        } 
                         else {
                             setAboutSelected(false)
                             setProjectSelected(false)
+                            setResumeSelected(false)
                         }
                         }}>{category.name}</Nav.Link>
                 </Nav.Item>

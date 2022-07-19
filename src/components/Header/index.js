@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
-import Contact from "../Contact";
+// import Contact from "../Contact";
 import Navigation from "../Nav";
 
 import Container from 'react-bootstrap/Container';
@@ -33,7 +33,8 @@ function Header(props) {
 
     const { 
         projectSelected, setProjectSelected,
-        aboutSelected, setAboutSelected
+        aboutSelected, setAboutSelected,
+        resumeSelected, setResumeSelected
      } = props;
 
     return(
@@ -45,9 +46,9 @@ function Header(props) {
                             <Col xs={8} md={8} lg={8}>
                                 <h1>Anthony Rankin</h1>
                             </Col>
-                            <Col xs={2} md={2} lg={2}>
+                            {/* <Col xs={2} md={2} lg={2}">
                                 <Contact />
-                            </Col>
+                            </Col> */}
                         </Accordion.Header>
                         <Accordion.Body>
                             <Navigation 
@@ -58,6 +59,8 @@ function Header(props) {
                                 setProjectSelected={setProjectSelected}
                                 aboutSelected={aboutSelected}
                                 setAboutSelected={setAboutSelected}
+                                resumeSelected={resumeSelected}
+                                setResumeSelected={setResumeSelected}
                              />
                         </Accordion.Body>
                     </Row>

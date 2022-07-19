@@ -16,7 +16,9 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(0);
 
-  const [projectSelected, setProjectSelected] =useState(false);
+  const [projectSelected, setProjectSelected] = useState(false);
+
+  const [aboutSelected, setAboutSelected] = useState(false);
 
   return (
     <div>
@@ -24,17 +26,39 @@ function App() {
         <Header
         projectSelected={projectSelected}
         setProjectSelected={setProjectSelected}
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
          />
+         {/* Messy, but I got it to work */}
 
+         {/* Will display home if nothing else is selected */}
+         {!projectSelected && !aboutSelected ? (
+          <>
           <Home />
-          {/* <Navigation /> */}
-          {!projectSelected ? (
+          </>
+         ) : (
+          <div></div>
+         )}
+
+         {/* Displays project if projectSelected is true */}
+        {projectSelected ? (
+            <>
+            <Project />
+            
+            </>
+          )   :  (
+            <div />
+          )}
+
+        {/* displays About if  aboutSelected is true */}
+        {aboutSelected ? (
             <>
             <About currentCategory={currentCategory} />
             </>
           ) : (
-            <Project />
+            <div />
           )}
+
         <Footer />
       </main>
     </div>

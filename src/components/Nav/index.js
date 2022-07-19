@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Nav from "react-bootstrap/Nav"
+import Nav from "react-bootstrap/Nav";
 // import Contact from "../Contact";
 
 function Navigation(props){
@@ -10,7 +10,9 @@ function Navigation(props){
         setCurrentCategory,
         currentCategory,
         projectSelected,
-        setProjectSelected
+        setProjectSelected,
+        aboutSelected,
+        setAboutSelected
     } = props;
 
     useEffect(() =>{
@@ -27,6 +29,8 @@ function Navigation(props){
     //     console.log(`${currentCategory.name} clicked`)
     // }
 
+
+
     return (
 
         <Nav justify variant="tabs" defaultActiveKey="/home">
@@ -34,12 +38,24 @@ function Navigation(props){
             {categories.map((category) => (
                 <Nav.Item className={` ${currentCategory.name === category.name && 'navActive'}`} key={category.name}>
                     <Nav.Link onClick={() => { 
-                        // setProjectSelected(true)
+
                         setCurrentCategory(category)
+                        
+                        // console.log(aboutSelected + ' about');
+                        // console.log(projectSelected + ' project');
+
+                        // console.log(currentCategory.name)
+
                         if(category.name === 'My Projects'){
                             setProjectSelected(true);
+                            setAboutSelected(false)
                         }
-                        else{
+                        else if(category.name === 'About Me'){
+                            setAboutSelected(true)
+                            setProjectSelected(false)    
+                        }
+                        else {
+                            setAboutSelected(false)
                             setProjectSelected(false)
                         }
                         }}>{category.name}</Nav.Link>

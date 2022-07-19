@@ -31,9 +31,10 @@ function Header(props) {
 
     const [currentCategory, setCurrentCategory] = useState(0);
 
-    // const [projectSelected, setProjectSelected] = useState();
-
-    const { projectSelected, setProjectSelected } = props;
+    const { 
+        projectSelected, setProjectSelected,
+        aboutSelected, setAboutSelected
+     } = props;
 
     return(
         <Container>
@@ -55,6 +56,8 @@ function Header(props) {
                                 currentCategory={currentCategory}
                                 projectSelected={projectSelected}
                                 setProjectSelected={setProjectSelected}
+                                aboutSelected={aboutSelected}
+                                setAboutSelected={setAboutSelected}
                              />
                         </Accordion.Body>
                     </Row>

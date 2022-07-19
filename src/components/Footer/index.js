@@ -8,7 +8,7 @@ import Contact from "../Contact";
 function Footer() {
 
     return (
-        <Container>
+        <Container className="footer">
             <Row>
                 <Col><h5>Anthony Rankin - 2022</h5></Col>
 

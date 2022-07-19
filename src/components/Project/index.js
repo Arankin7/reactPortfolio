@@ -67,8 +67,8 @@ function Project () {
         <Container>
         <Row className="justify-content-md-center">
         {projects.map((project) => (
-            <Col md="auto">
-            <Card style={{width: '18rem'}} key={project.name}>
+            <Col md="auto" className="topPad">
+            <Card className="boxShad" style={{width: '18rem'}} key={project.name}>
                 {/* Carousel for photos */}
             <Carousel fade>
                 {photos.map((photo) =>(

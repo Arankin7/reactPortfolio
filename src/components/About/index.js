@@ -7,10 +7,10 @@ import Collapse from "react-bootstrap/Collapse";
 
 function About() {
 
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     
     return (
-        <Container >
+        <Container className="boxShad topMar">
             <Row>
             <Button
                 variant="primary"

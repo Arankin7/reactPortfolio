@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+/* generic Styling */
+
+.topMar {
+  margin-top: 1em;
+}
+.topPad {
+  padding-top: 1em;
+}
+
+.boxShad {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* image on homepage */
+.homeImg {
+  width: 50%;
+  float: right;  
+}
+
+/* footer Styling */
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 2rem;
+}

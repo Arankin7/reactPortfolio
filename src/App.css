@@ -58,6 +58,12 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
+.navActive {
+  background-color: lightcyan;
+  box-shadow: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
 /* image on homepage */
 .homeImg {
   width: 50%;

@@ -48,7 +48,7 @@ function Contact() {
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(formState);
+        // console.log(formState);
     }
 
     return (
@@ -63,7 +63,7 @@ function Contact() {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <h5>Fill out this form to contact me!</h5>
+                    <h5>Fill out this form to get in touch!</h5>
                     
                     {/* Contact Form */}
                     <Form>
@@ -99,6 +99,7 @@ function Contact() {
                             name="message"
                             defaultValue={message} 
                             rows={3}
+                            placeholder="Currently this form isn't fully functional.  The best way to get in contact with me would be to send me an email."
                             />
                         </Form.Group>
 

@@ -7,6 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Contact from "../Contact";
 
 function Project () {
 
@@ -65,7 +66,19 @@ function Project () {
     return (
 
         <Container>
+            <Row>
+            <Col sm={9}>
+                <p className="topMar footText">
+                    This is just a small handful of projects I've worked on.  For more of my projects (including back-end work) visit my <a href="https://github.com/Arankin7" rel="noreferrer" target="_blank">GitHub</a> page! 
+                </p>
+            </Col>
+            <Col>
+                <Contact />
+            </Col>
+
+            </Row>
         <Row className="justify-content-md-center">
+            
         {projects.map((project) => (
             <Col md="auto" className="topPad">
             <Card className="boxShad leftMar" style={{width: '18rem'}} key={project.name}>
@@ -74,7 +87,7 @@ function Project () {
                 {photos.map((photo) =>(
                     <Carousel.Item>
                     <img 
-                    className="d-block w-100"
+                    className="d-block w-100 imgOpac"
                     src={require(`../../assets/images/${project.name}/${photo.index}.png`)}
                     alt={project.description}
                     />
@@ -96,12 +109,14 @@ function Project () {
                             <div>
                             <Button variant="secondary" href={project.github} target="_blank">GitHub</Button>
                             <Button variant="success" href={project.deployed} target="_blank">Link to Page</Button>
-                            </div>                
+                            <Contact />
+                            </div>
+                                            
                         </Popover.Body>
                     </Popover>
                 }>
 
-                <Button variant="info">Info</Button>
+                <Button variant="info">Click for Info</Button>
                 </OverlayTrigger>
             </Card.Body>
         </Card>

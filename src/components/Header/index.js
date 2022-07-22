@@ -44,13 +44,13 @@ function Header(props) {
                     <Row className="justify-content-md-center">
                         <Accordion.Header>
                             <Col xs={8} md={8} lg={8}>
-                                <h1>Anthony Rankin</h1>
+                                <h1 className="hText">Anthony Rankin</h1>
                             </Col>
                             {/* <Col xs={2} md={2} lg={2}">
                                 <Contact />
                             </Col> */}
                         </Accordion.Header>
-                        <Accordion.Body>
+                        <Accordion.Body className="accordionBody">
                             <Navigation 
                                 categories={categories}
                                 setCurrentCategory={setCurrentCategory}

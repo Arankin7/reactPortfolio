@@ -37,6 +37,20 @@
   }
 }
 
+:root {
+  --ashGray: #B4B8AB;
+  --prusBlue: #153243;
+  --charcoal: #1F3F53;
+  --indigoDye: #284b63;
+  --cadetGrey: #8EA2A6;
+  --ivory: #F4F9E9;
+  --powderBlue: #c6dddc;
+  --greenSheen: #74b3aee3;
+  --tiffanyBlue: #3AC1B5; 
+  
+}
+
+
 /* generic Styling */
 
 .topMar {
@@ -58,23 +72,120 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-.navActive {
-  background-color: lightcyan;
-  box-shadow: rgba(0, 0, 0, 0.6);
-  font-weight: bold;
-}
-
 /* image on homepage */
 .homeImg {
   width: 50%;
   float: right;  
 }
 
+/* header styling(includes Nav) */
+.accordionBody {
+  background-color: var(--ashGray);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--cadetGrey);  
+}
+
+.collapsed {
+  background-color: var(--ashGray);
+}
+
+.hText {
+  color: var(--prusBlue);
+  text-shadow: 1px 1px 3px var(--ivory);
+}
+
 /* footer Styling */
 .footer {
-  position: static;
+  background-color: var(--ashGray);
+  border-radius: 5px;
+  position: relative;
   left: 0;
   bottom: 0;
   right: 0;
-  padding-top: 2em;
+  padding: 1em 0;
+  margin-top: 2em;
+
+  font-size: .8em;
+  font-weight: 600; 
+}
+
+.footText {
+  margin-left: 1em;
+  font-weight: 600;
+}
+
+
+/* for svg/buttons/links */
+.svg {
+  fill: var(--indigoDye);
+}
+
+.svg:hover {
+  fill: var(--ivory);
+}
+
+.nav-link {
+  color: var(--indigoDye);
+}
+
+.nav-tabs {
+  border: 1px solid var(--charcoal);
+  border-radius: 0.25em;
+}
+
+.navActive {
+  background-color: var(--cadetGrey);
+  box-shadow: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  color: var(--ivory);
+}
+
+.imgOpac {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  filter: blur(1px);
+}
+
+.imgOpac:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.imgOpac:focus {
+  opacity: 1;
+}
+
+/* primary button styling */
+.btn-primary {
+  background-color: var(--prusBlue);
+  border-color: var(--charcoal);
+  color: var(--ivory);
+}
+
+.btn-primary:hover {
+  background-color: var(--charcoal);
+}
+
+.btn-primary:focus {
+  background-color: var(--indigoDye) ;
+}
+
+/* info button styling */
+.btn-info {
+  background-color: var(--greenSheen);
+  border-color: var(--greenSheen);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.btn-info:hover {
+  background-color: var(--tiffanyBlue);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* page Styling */
+.page {
+  background-color: var(--powderBlue);
 }

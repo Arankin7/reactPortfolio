@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 // import Components 
 import About from './components/About';
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <main>
+      <main className="page">
         <Header
         projectSelected={projectSelected}
         setProjectSelected={setProjectSelected}

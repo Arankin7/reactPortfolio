@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 import myResume from '../../assets/resume/myResume.pdf';
 import resumeImg from '../../assets/resume/resumeImg.png';
+import Contact from "../Contact";
 
 
 function Resume() {
@@ -18,6 +19,7 @@ function Resume() {
                 <h2>My Resume</h2>
                 <p>Here you can view my resume, or if you would like, there is a link to donwload it.</p>
                 </Col>
+                
                 <Col>
                     {/* perhaps a modal that confirms download w/ thumbnail of resume  */}
                     {/* Maybe another Contact button. */}
@@ -27,11 +29,16 @@ function Resume() {
                 </Col>
                 
             </Row>
+            <Row>
+                <Contact />
+            </Row>
 
             <Row>
                 {/* Used a png for ease of use */}
                 <div>
-                    <img src={resumeImg}width="100%" className="boxShad topMar"/>
+                    <img src={resumeImg} alt="professional resume" width="100%" className="boxShad topMar"/>
+                    {/* could use Embed, but it doesn't format properly on */}
+                    {/* <embed src={myResume} width="100%" /> */}
                 </div>
             </Row>
         </Container>

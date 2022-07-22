@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Contact from "../Contact";
 
+import smSamus from "../../assets/images/smSamus.svg";
+
 function Home () {
 
 
@@ -19,11 +21,10 @@ function Home () {
                 </Col>
                 
                 <Col>
-                <img className="homeImg" alt="" src={require('../../assets/images/placeholder2.png')} />
+                <img src={smSamus} alt="samus from Super metroid" className="homeImg" />
                 </Col>                
             </Row>
             <Row>
-                {/* <img alt="" src={require('../../assets/images/placeholder.png')} /> */}
                 <Contact />
             </Row>
         </ Container>

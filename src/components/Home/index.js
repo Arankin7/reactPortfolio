@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Contact from "../Contact";
 
 import smSamus from "../../assets/images/smSamus.svg";
+import SBJ from '../../assets/images/video/SBJ.mp4'
 
 function Home () {
 
@@ -22,6 +23,9 @@ function Home () {
                 
                 <Col>
                 <img src={smSamus} alt="samus from Super metroid" className="homeImg" />
+                {/* <video width="320" height="240" controls>
+                    <source src={SBJ} type="video/mp4"></source>
+                </video> */}
                 </Col>                
             </Row>
             <Row>

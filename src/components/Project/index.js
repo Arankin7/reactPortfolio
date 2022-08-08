@@ -47,6 +47,12 @@ function Project () {
             description: "Weather dashboard where you can search for weather by city",
             github: "https://github.com/Arankin7/weatherDashboard_AR",
             deployed: "https://arankin7.github.io/weatherDashboard_AR/"
+        }, 
+        {
+            name: "Poke App",
+            description: "An app where users can create a team of 6 pokemon",
+            github: "https://github.com/mrsdno/poke-app",
+            deployed: " "
         }
     ])
 

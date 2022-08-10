@@ -52,7 +52,7 @@ function Project () {
             name: "Poke App",
             description: "An app where users can create a team of 6 pokemon",
             github: "https://github.com/mrsdno/poke-app",
-            deployed: " "
+            deployed: "https://best-team-poke-app.herokuapp.com/"
         }
     ])
 

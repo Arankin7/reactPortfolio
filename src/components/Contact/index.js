@@ -99,7 +99,7 @@ function Contact() {
                             name="message"
                             defaultValue={message} 
                             rows={3}
-                            placeholder="Currently this form isn't fully functional.  The best way to get in contact with me would be to send me an email."
+                            placeholder="Please Email me at arankin789@gmail.com to get in contact."
                             />
                         </Form.Group>
 

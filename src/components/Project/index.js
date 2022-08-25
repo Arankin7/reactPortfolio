@@ -26,7 +26,7 @@ function Project () {
         },
         {
             name: "Just Music Reviews",
-            description: "A fullstack app that uses MySql as a database",
+            description: "A fullstack app that uses MySql as a database, and sequelize as an ORM.",
             github: "https://github.com/Arankin7/JustMusicReviews",
             deployed: "https://blooming-headland-30084.herokuapp.com/"
         },
@@ -38,19 +38,19 @@ function Project () {
         },
         {
             name: "Work Day Scheduler",
-            description: "Simple calendar app for scheduling your work day.",
+            description: "Simple calendar app for scheduling your work day, utilizes localStorage.",
             github: "https://github.com/Arankin7/daily-scheduler",
             deployed: "https://arankin7.github.io/daily-scheduler/"
         },
         {
             name: "Weather Dashboard",
-            description: "Weather dashboard where you can search for weather by city",
+            description: "Weather dashboard where you can search for weather by city, utilizes 3rd party web APIs",
             github: "https://github.com/Arankin7/weatherDashboard_AR",
             deployed: "https://arankin7.github.io/weatherDashboard_AR/"
         }, 
         {
             name: "Poke App",
-            description: "An app where users can create a team of 6 pokemon",
+            description: "An app where users can create a team of 6 pokemon.  Utilizes React.js with a mongoose backend.",
             github: "https://github.com/mrsdno/poke-app",
             deployed: "https://best-team-poke-app.herokuapp.com/"
         }
@@ -106,7 +106,7 @@ function Project () {
                 {/* <Card.Text>{project.description}</Card.Text> */}
 
                 {/* Had to define the popover in the overlay Property */}
-                <OverlayTrigger trigger="focus" placement="right" 
+                <OverlayTrigger trigger="focus" placement="top" 
                 overlay={
                     <Popover id="popover-basic" key={project.name}>
                         <Popover.Header as="h3">{project.name}</Popover.Header>
@@ -114,7 +114,11 @@ function Project () {
                         {project.description}
                             <div>
                             <Button variant="secondary" href={project.github} target="_blank">GitHub</Button>
+                            </div>
+                            <div>
                             <Button variant="success" href={project.deployed} target="_blank">Link to Page</Button>
+                            </div>
+                            <div>
                             <Contact />
                             </div>
                                             

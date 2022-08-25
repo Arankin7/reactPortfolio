@@ -30,7 +30,10 @@ function About() {
                     <Col>
                         <h4 className="hText">About me:</h4>
                         <p>
-                        I have a great passion for learning. Throughout my life I've acquired many skills and hobbies. Some are just for fun, such as juggling, cooking, speedrunning. While other skills have been honed to advance my professional life. I spent a decade learning the ins and outs of the optical industry. Now I'm on a new career path following my passion and buidling applications and websites. The possibilites are endless and though slightly daunted I'm more than excited to dive in headfirst into a world of unending knowledge.
+                        I am a Full Stack Web developer utilizing 10 years of experience in the optical industry to build user friendly, mobile first web applications.  As a recent graduate from Rutgers intensive Full Stack Web Development Bootcamp I have acquired skills in Javascript, CSS, HTML5, React.js, and responsive web design.  Known by co-workers as an extremely efficient worker, agile development is something that came as second nature to me.  With each day and project I look forward to learning new technologies to expand my skill set.  I look forward to leverging my skills in a fast paced team to deliver quality, responsive, and accessible web applications. 
+                        </p> 
+                        <p>
+                        As a hobby I started to look into and learn C# as a programming language.  I hope to one day see myself in the role of fulltime game developer, but for now I will persue this on the side. 
                         </p>
                     </Col>
                     <Col>

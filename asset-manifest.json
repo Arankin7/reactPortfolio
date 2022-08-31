@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactPortfolio/static/css/main.d8a9024e.css",
-    "main.js": "/reactPortfolio/static/js/main.1504b3bb.js",
+    "main.js": "/reactPortfolio/static/js/main.78814ca5.js",
     "static/js/787.a2cb61a6.chunk.js": "/reactPortfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/SBJ.mp4": "/reactPortfolio/static/media/SBJ.9433cc346037e59bc2cd.mp4",
     "static/media/0.png": "/reactPortfolio/static/media/0.a038f57faa0cd9b35038.png",
@@ -12,19 +12,19 @@
     "static/media/1.png": "/reactPortfolio/static/media/1.b9d68d7c59ae8d917501.png",
     "static/media/smSamus.png": "/reactPortfolio/static/media/smSamus.34b5c5ae98364586cfb7.png",
     "static/media/scrnshot4.png": "/reactPortfolio/static/media/scrnshot4.fa9845d58e9cd1fc7f25.png",
-    "static/media/myResume.pdf": "/reactPortfolio/static/media/myResume.fe17386c3c63868797f0.pdf",
     "static/media/rutCert.jpg": "/reactPortfolio/static/media/rutCert.b343cb64cb2a90572f0d.jpg",
     "static/media/scrnshot2.png": "/reactPortfolio/static/media/scrnshot2.047ceeb2ed704ee8769d.png",
     "static/media/scrnshot1.png": "/reactPortfolio/static/media/scrnshot1.d117e1e6d0dbc0df4a53.png",
     "static/media/scrnshot3.png": "/reactPortfolio/static/media/scrnshot3.2d3b1c12c9dfe3baea84.png",
+    "static/media/AnthonyRankinResume.pdf": "/reactPortfolio/static/media/AnthonyRankinResume.d5c0fde1d8c81c36de75.pdf",
     "static/media/smSamus.svg": "/reactPortfolio/static/media/smSamus.56abc0c53b432f4e60d391e6c0a72743.svg",
     "index.html": "/reactPortfolio/index.html",
     "main.d8a9024e.css.map": "/reactPortfolio/static/css/main.d8a9024e.css.map",
-    "main.1504b3bb.js.map": "/reactPortfolio/static/js/main.1504b3bb.js.map",
+    "main.78814ca5.js.map": "/reactPortfolio/static/js/main.78814ca5.js.map",
     "787.a2cb61a6.chunk.js.map": "/reactPortfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8a9024e.css",
-    "static/js/main.1504b3bb.js"
+    "static/js/main.78814ca5.js"
   ]
 }

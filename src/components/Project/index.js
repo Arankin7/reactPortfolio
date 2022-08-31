@@ -53,7 +53,13 @@ function Project () {
             description: "An app where users can create a team of 6 pokemon.  Utilizes React.js with a mongoose backend.",
             github: "https://github.com/mrsdno/poke-app",
             deployed: "https://best-team-poke-app.herokuapp.com/"
-        }
+        },
+        {
+            name: "CatWorx",
+            description: "A command line application where users can create employee badges.",
+            github: "https://github.com/Arankin7/Catworx",
+            deployed: ""
+        },
     ])
 
     // Used to cycle through each project Screenshot
@@ -113,12 +119,12 @@ function Project () {
                         <Popover.Body>
                         {project.description}
                             <div>
-                            <Button variant="secondary" href={project.github} target="_blank">GitHub</Button>
+                            <Button variant="secondary" className="btnMar" href={project.github} target="_blank">GitHub</Button>
                             </div>
                             <div>
-                            <Button variant="success" href={project.deployed} target="_blank">Link to Page</Button>
+                            <Button variant="success" className="btnMar" href={project.deployed} target="_blank">Link to Page</Button>
                             </div>
-                            <div>
+                            <div className="btnMar">
                             <Contact />
                             </div>
                                             

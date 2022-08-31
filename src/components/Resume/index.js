@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
 
 import Contact from "../Contact";
-import myResume from '../../assets/resume/myResume.pdf';
+import myResume from '../../assets/resume/AnthonyRankinResume.pdf';
 import rutCert from '../../assets/Cert/rutCert.jpg';
 
 function Resume() {

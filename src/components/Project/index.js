@@ -8,6 +8,9 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Contact from "../Contact";
+import CardHeader from "react-bootstrap/esm/CardHeader";
+
+import PongClone from '../../assets/images/video/PongClone.mp4';
 
 function Project () {
 
@@ -90,6 +93,49 @@ function Project () {
 
             </Row>
         <Row className="justify-content-md-center">
+
+{/* Col for Pong CLone */}
+        <Row className="justify-content-md-center">
+        <Col md="auto" className="topPad">
+            <Card className="boxShad " style={{width: '25rem'}}>
+
+                <video width="auto" height="240" controls>
+                    <source src={PongClone} type="video/mp4"></source>
+                </video>
+
+                <Card.Body>
+                <Card.Title>Pong Clone</Card.Title>
+
+                <OverlayTrigger trigger="focus" placement="top" 
+                overlay={
+                    <Popover id="popover-basic" >
+                        <Popover.Header as="h3">Pong</Popover.Header>
+                        <Popover.Body>
+                        
+                        <p>
+                            In my endeavor to become a game developer I decided to make a clone of the classic game Pong!
+                        </p>
+                            <div>
+                            <Button variant="secondary" className="btnMar" href="https://github.com/Arankin7/pongClone" target="_blank">GitHub</Button>
+                            </div>
+                            <div>
+                            <Button variant="success" className="btnMar" href="https://arankin7.github.io/pongCloneBuild/" target="_blank">Link to Page</Button>
+                            </div>
+                            <div className="btnMar">
+                            <Contact />
+                            </div>
+                                            
+                        </Popover.Body>
+                    </Popover>
+                }>
+
+                <Button variant="info">Click for Info</Button>
+                </OverlayTrigger>
+
+                </Card.Body>                
+            </Card>
+        </Col>
+        </Row>
             
         {projects.map((project) => (
             <Col md="auto" className="topPad">

@@ -31,6 +31,8 @@ function Home () {
             <Row>
                 <Contact />
             </Row>
+
+            <Row></Row>
         </ Container>
     )
 }

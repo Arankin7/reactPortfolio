@@ -35,4 +35,5 @@
 
   ## Contact 
   - Github: [Github](https://github.com/arankin7)
+  - Email: [arankin789@gmail.com](mailto:arankin789@gmail.com)
 

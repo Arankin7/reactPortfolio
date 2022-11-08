@@ -114,6 +114,7 @@ function Project () {
                         
                         <p>
                             In my endeavor to become a game developer I decided to make a clone of the classic game Pong!
+                            Currently this build only works on desktop. 
                         </p>
                             <div>
                             <Button variant="secondary" className="btnMar" href="https://github.com/Arankin7/pongClone" target="_blank">GitHub</Button>

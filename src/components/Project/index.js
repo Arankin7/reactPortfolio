@@ -22,6 +22,12 @@ function Project () {
             deployed: "https://arankin7.github.io/food-festival/",
         },
         {
+            name: "NewsApi",
+            description: "A simple app that pulls news articles from NewsApi.org.",
+            github: "https://github.com/Arankin7/newsApi-ims",
+            deployed: "https://github.com/Arankin7/newsApi-ims",
+        },
+        {
             name: "Calculator",
             description: "A quick little project I made to better understand writing algorithms.",
             github: "https://github.com/Arankin7/calculator",
@@ -61,7 +67,7 @@ function Project () {
             name: "CatWorx",
             description: "A command line application where users can create employee badges.",
             github: "https://github.com/Arankin7/Catworx",
-            deployed: ""
+            deployed: "https://github.com/Arankin7/Catworx"
         },
     ])
 

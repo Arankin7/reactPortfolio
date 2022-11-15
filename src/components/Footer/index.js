@@ -38,7 +38,6 @@ function Footer() {
                         </svg>
                     </a>
                     </Col>
-                    {/* <Col> <Contact /> </Col>                     */}
                 </Row>
             </Col>
             </Row>

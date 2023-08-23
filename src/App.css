@@ -184,6 +184,8 @@
 .btn-info:hover {
   background-color: var(--tiffanyBlue);
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  transform: translateY(-00.15em);
+  transform: scale(1.07);
 }
 
 .btn-light {
@@ -192,6 +194,16 @@
 
 .btn-light:hover {
   background-color: var(--powderBlue);
+}
+
+.btn-popover{
+  color: var(--prusBlue);
+}
+.btn-popover:hover{
+  color: var(--ivory);
+  transform: translateY(-00.15em);
+  box-shadow: 0px 2px 4px var(--prusBlue);
+  
 }
 
 .btnMar {

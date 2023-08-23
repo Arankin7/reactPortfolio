@@ -10,11 +10,23 @@ import Row from 'react-bootstrap/Row';
 import Contact from "../Contact";
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
-import PongClone from '../../assets/images/video/PongClone.mp4';
+import CubeVideo from '../../assets/images/video/CubeVideo.mp4';
 
 function Project () {
 
     const [projects] = useState([
+        {
+            name: "Procedural Maze Generator",
+            description: "This is a Procedural Maze Generator created in Unity that takes input from the user and generates a playable maze using the width and height the user enters.",
+            github: "https://github.com/Arankin7/unityMazeGenerator",
+            deployed: "https://arankin7.itch.io/procedural-maze-generator",
+        },
+        {
+            name: "Pong Clone",
+            description: "In my endeavor to become a game developer I decided to make a clone of the classic game Pong! Currently this build only works on desktop.",
+            github: "https://github.com/Arankin7/pongClone",
+            deployed: "https://arankin7.github.io/pongCloneBuild/",
+        },
         {
             name: "Food Festival",
             description: "A project used to learn and understand PWAs and service workers",
@@ -103,35 +115,30 @@ function Project () {
 {/* Col for Pong CLone */}
         <Row className="justify-content-md-center">
         <Col md="auto" className="topPad">
-            <Card className="boxShad " style={{width: '25rem'}}>
+            <Card className="boxShad leftMar" style={{width: '18rem'}}>
 
                 <video width="auto" height="240" controls>
-                    <source src={PongClone} type="video/mp4"></source>
+                    <source src={CubeVideo} type="video/mp4"></source>
                 </video>
 
                 <Card.Body>
-                <Card.Title>Pong Clone</Card.Title>
+                <Card.Title>Interactable Puzzle Box</Card.Title>
 
                 <OverlayTrigger trigger="focus" placement="top" 
                 overlay={
                     <Popover id="popover-basic" >
-                        <Popover.Header as="h3">Pong</Popover.Header>
+                        <Popover.Header as="h3">RubeCube</Popover.Header>
                         <Popover.Body>
                         
                         <p>
-                            In my endeavor to become a game developer I decided to make a clone of the classic game Pong!
-                            Currently this build only works on desktop. 
+                            A fun Unity Project recreating a classic Puzzle Box.  Features an interactable puzzle box, the ability to auto shuffle the cube, and a cube map that displays the state of the cube.  
                         </p>
                             <div>
-                            <Button variant="secondary" className="btnMar" href="https://github.com/Arankin7/pongClone" target="_blank">GitHub</Button>
+                            <Button variant="secondary" className="btnMar btn-popover" href="https://github.com/Arankin7/rubiksCubeUnityApp" target="_blank">GitHub</Button>
                             </div>
                             <div>
-                            <Button variant="success" className="btnMar" href="https://arankin7.github.io/pongCloneBuild/" target="_blank">Link to Page</Button>
-                            </div>
-                            <div className="btnMar">
-                            <Contact />
-                            </div>
-                                            
+                            <Button variant="success" className="btnMar btn-popover" href="https://arankin7.itch.io/rube-cube" target="_blank">Link to Page</Button>
+                            </div>                                            
                         </Popover.Body>
                     </Popover>
                 }>
@@ -172,15 +179,11 @@ function Project () {
                         <Popover.Body>
                         {project.description}
                             <div>
-                            <Button variant="secondary" className="btnMar" href={project.github} target="_blank">GitHub</Button>
+                            <Button variant="secondary" className="btnMar btn-popover" href={project.github} target="_blank">GitHub</Button>
                             </div>
                             <div>
-                            <Button variant="success" className="btnMar" href={project.deployed} target="_blank">Link to Page</Button>
-                            </div>
-                            <div className="btnMar">
-                            <Contact />
-                            </div>
-                                            
+                            <Button variant="success" className="btnMar btn-popover" href={project.deployed} target="_blank">Link to Page</Button>
+                            </div>                                            
                         </Popover.Body>
                     </Popover>
                 }>

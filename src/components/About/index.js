@@ -40,6 +40,8 @@ function About() {
                         <h4 className="hText">Skills:</h4>
                         <ul>
                             <li>HTML 5</li>
+                            <li>C#</li>
+                            <li>Unity</li>
                             <li>CSS3</li>
                             <li>Javascript</li>
                             <li>jQuery</li>
